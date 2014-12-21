@@ -27,6 +27,7 @@ class TextureModifier : AssetPostprocessor
         var pixels = texture.GetPixels ();
         var offs = 0;
 
+        var k1Per15 = 1.0f / 15.0f;
         var k1Per16 = 1.0f / 16.0f;
         var k3Per16 = 3.0f / 16.0f;
         var k5Per16 = 5.0f / 16.0f;
@@ -39,10 +40,10 @@ class TextureModifier : AssetPostprocessor
                 float g = pixels [offs].g;
                 float b = pixels [offs].b;
 
-                var a2 = Mathf.Round(a * 16.0f) * k1Per16;
-                var r2 = Mathf.Round(r * 16.0f) * k1Per16;
-                var g2 = Mathf.Round(g * 16.0f) * k1Per16;
-                var b2 = Mathf.Round(b * 16.0f) * k1Per16;
+                var a2 = Mathf.Round(a * 15.0f) * k1Per15;
+                var r2 = Mathf.Round(r * 15.0f) * k1Per15;
+                var g2 = Mathf.Round(g * 15.0f) * k1Per15;
+                var b2 = Mathf.Round(b * 15.0f) * k1Per15;
 
                 var ae = a - a2;
                 var re = r - r2;
