@@ -32,13 +32,15 @@ Unity において 16 bit color の画質が著しく悪化する原因は、そ
 ディザリング適用時の 16 bit 減色例
 ----------------------------------
 
-この文書で提示する方法によりディザリングを適用した例です。左がオリジナルの画像、右が 16 bit 減色後の画像です。色相に若干の乱れが生じていますが（髪の毛のグラデーションに注目してください）、全体としてマッハバンドは軽減されていることが分かります。
+この文書で提示する方法によりディザリングを適用した例です。左がオリジナルの画像、右が 16 bit 減色後の画像です。若干ジャリジャリとしたノイズが混ざる形となっていますが、全体としてマッハバンドは軽減されていることが分かります。
 
 ![Image A (original)](http://keijiro.github.io/unity-dither4444/a-original.png)![Image A (dithered)](http://keijiro.github.io/unity-dither4444/a-dither.png)
 
-もう一例挙げます。
-
 ![Image B (original)](http://keijiro.github.io/unity-dither4444/b-original.png)![Image B (dithered)](http://keijiro.github.io/unity-dither4444/b-dither.png)
+
+![Image C (original)](http://keijiro.github.io/unity-dither4444/c-original.png)![Image C (dithered)](http://keijiro.github.io/unity-dither4444/c-dither.png)
+
+![Image D (original)](http://keijiro.github.io/unity-dither4444/d-original.png)![Image D (dithered)](http://keijiro.github.io/unity-dither4444/d-dither.png)
 
 スクリプトの説明
 ----------------
