@@ -40,10 +40,10 @@ class TextureModifier : AssetPostprocessor
                 float g = pixels [offs].g;
                 float b = pixels [offs].b;
 
-                var a2 = Mathf.Round(a * 15.0f) * k1Per15;
-                var r2 = Mathf.Round(r * 15.0f) * k1Per15;
-                var g2 = Mathf.Round(g * 15.0f) * k1Per15;
-                var b2 = Mathf.Round(b * 15.0f) * k1Per15;
+                var a2 = Mathf.Clamp01 (Mathf.Floor (a * 16) * k1Per15);
+                var r2 = Mathf.Clamp01 (Mathf.Floor (r * 16) * k1Per15);
+                var g2 = Mathf.Clamp01 (Mathf.Floor (g * 16) * k1Per15);
+                var b2 = Mathf.Clamp01 (Mathf.Floor (b * 16) * k1Per15);
 
                 var ae = a - a2;
                 var re = r - r2;
