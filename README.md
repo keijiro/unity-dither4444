@@ -26,3 +26,8 @@ Usage
 -----
 
 Add “Dither” to the end of the filename, or import an image with the “Dither” suffix. The AssetPostProcessor script automatically detects and convert it. You can change the behavior by modifying the script. See [the script](https://github.com/keijiro/unity-dither4444/blob/master/Assets/Editor/TextureModifier.cs) for further details.
+
+License
+-------
+
+The script files in this repository are in the public domain. You can copy and paste it without permission or attribution.
