@@ -8,7 +8,7 @@ class TextureModifier : AssetPostprocessor
     {
         var importer = (assetImporter as TextureImporter);
 
-        importer.textureType = TextureImporterType.GUI;
+        importer.textureType = TextureImporterType.Sprite;
 
         if (assetPath.EndsWith ("Dither.png")) {
             importer.textureFormat = TextureImporterFormat.RGBA32;
